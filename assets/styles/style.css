@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --grey-yang: #303030;
+    --grey-ying: #f9f9f9;
+    --light: #fff;
+    --yellow-scale: #C07212; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+}
+body{
+    background-color: var(--grey-yang);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction{
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey-yang);
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 108px 0 0 62px;
+    gap: 20px;
+    color: var(--light);
+}
+
+.description h1{
+    font-size: 3.75rem;
+    font-weight: bolder;
+}
+.description p{
+    
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+.informational{
+    width: 100%;
+    height: 30%;
+    background-color: var(--grey-ying);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 62px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+}
+.content span{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.content p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
