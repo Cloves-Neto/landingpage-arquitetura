@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --grey-yang: #303030;
@@ -121,3 +122,89 @@ figure img{
     width: 100%;
     min-width: 500px;
 }
+/* Contact - section */
+.contact{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-yang);
+    padding: 62px;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap.title h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--light);
+}
+.wrap.fo-content{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.form-sheets{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height:100%;
+    gap: 62px;
+}
+.form-sheets input{
+    width: 100%;
+    max-width: 508px;
+    height: 72px;
+    border-radius: 8px;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.form-sheets input:focus{
+    outline: solid 5px var(--yellow-scale);
+}
+
+.form-sheets input[type="text"]{
+    text-transform: capitalize;
+}
+.form-sheets input::placeholder{
+    color: #0000004D;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family:"Raleway", sans-serif;
+}
+.form-sheets input[type="submit"]{
+    width: 280px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family:"Raleway", sans-serif;
+    color: var(--light);
+    background-color: var(--yellow-scale);
+    margin: 20px;
+    cursor: pointer;
+}
+.form-sheets input[type="submit"]:hover{
+    transform: translateY(-10px);
+    background-color: #eda348;
+    border: solid 1px var(--yellow-scale);
+    box-shadow: #565656 0px 10px 15px;
+    transition: .2s ease-in-out;
+}
+
