@@ -1,0 +1,6 @@
+Documento que reune alguma informações de referencia para realizar
+o desenvolvimento do projeto.
+
+link de referencia para estilizar a animação do contador:
+    https://www.youtube.com/watch?v=WfDIU93fN3o
+

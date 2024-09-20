@@ -124,7 +124,7 @@ figure img{
 }
 /* Contact - section */
 .contact{
-    height: 60vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
