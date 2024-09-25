@@ -1,5 +1,5 @@
 
-# Projeto Desafio Landingpage - Escola DNC
+# Desafio 1 Landingpage - Resolução ( Escola DNC )
 
 [![Captura-de-tela-2024-09-24-225314.png](https://i.postimg.cc/nrhyCn5p/Captura-de-tela-2024-09-24-225314.png)](https://postimg.cc/tZ8ScGpM)
 ### Contexto:
