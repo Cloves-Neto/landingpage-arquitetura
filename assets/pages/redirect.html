@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/redirect.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="button-back">
+                <button type="button" onclick="backPage()">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Voltar
+                </button>
+            </div>
+            <div class="description">
+                <h1>Conheça o <span class="color-swicth">Gênio</span> por Trás do Código</h1>
+                <p>
+                    Quer descobrir quem está por trás deste projeto moderno, 
+                    elegante e encantador? <span class="color-swicth">Cloves Neto</span> é o desenvolvedor por 
+                    trás de soluções digitais que transformam ideias em realidade.
+                     Siga suas redes sociais e acompanhe as novidades e próximos 
+                     projetos no LinkedIn. Quer saber como sua empresa pode se 
+                     destacar no mundo digital? Clique abaixo e vamos criar juntos!
+                </p>
+                <a href="https://devneto.com.br" target="_blank" rel="noopener">
+                        <div class="link">    
+                            Ver projetos 
+                            <span><ion-icon name="add-circle"></ion-icon></span>
+                        </div>
+                </a> 
+            </div>
+            
+        </div>
+        <div class="right">
+            <figure>
+                <img src="../images/arquitetura.svg" alt="imagem arquitetura">
+                <figcaption class="none">Imagem cover de referencia do projeto</figcaption>
+            </figure>
+
+            <div class="social">
+                <a href="https://linkedin.com/in/cloves-neto" target="_blank" rel="noopener"><img src="../images/ico-linkedin.svg" alt="icone linkedin" ></a>
+                <a href="https://www.instagram.com/_devneto/" target="_blank" rel="noopener"><img src="../images/ico-instagram.svg" alt="icone instagram"></a>
+                <a href="https://github.com/cloves-neto" target="_blank" rel="noopener"><img src="../images/ico-github.svg" alt="icone github"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Script ion-icon biblioteca de ícone -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Script - back page function -->
+    <script>
+        function backPage(){
+            window.location.href = "../../index.html";
+        }
+    </script>
+</body>
+</html>

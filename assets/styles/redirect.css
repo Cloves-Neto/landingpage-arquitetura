@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --grey-yang: #303030;
+    --grey-ying: #f9f9f9;
+    --light: #fff;
+    --yellow-scale: #C07212; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    overflow: hidden;
+
+}
+
+.none{
+    display: none;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1440px; */
+}
+
+
+/* Sessão esquerda - Titulo e descrição */
+.left{
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-back{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 150px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-ying);
+}
+.button-back button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--light);
+    color: var(--yellow-scale);
+    border-radius: 100px;
+    border: solid 1px var(--yellow-scale);
+    cursor: pointer;
+
+}
+.description{
+    width: 80%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 30px;
+}
+.description h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.color-swicth{
+    color: var(--yellow-scale);
+}
+.description p{
+    font-size: 1.5rem;
+}
+.description p span{
+    font-weight: 600;
+}
+.description a{
+    width: 400px;
+    color: var(--yellow-scale);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.link{
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.link ion-icon{
+    font-size: 3rem;
+    margin-top: 5px;
+}
+
+/* Sessão direita - Imagem cover de referencia do projeto */
+.right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.right figure{
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow-scale);
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+    }
+} 
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+
+.social a{
+    color: var(--grey-ying);
+    text-decoration: none;
+    font-size: 3rem;
+}
+.social a img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
