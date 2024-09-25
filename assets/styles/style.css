@@ -15,7 +15,7 @@
     font-family: "Inter", system-ui;
 }
 body{
-    background-color: var(--grey-yang);
+    background-color: whitesmoke;
     overflow-x: hidden;
 }
 
@@ -30,14 +30,35 @@ body{
 .section{
     width: 100vw;
     height: 100vh;
+    max-width: 1440px;
 }
 
 .none{
     display: none;
 }
 
+/* Pesrsonalização do scroll css */
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: var(--grey-ying);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--grey-yang);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #6b6037;
+}
+
 /* Introduction - section */
 .introduction{
+    height: 60vh;
     background-color: var(--grey-yang);
     display: flex;
     flex-direction: column;
@@ -48,7 +69,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column; 
-    padding: 108px 0 0 62px;
+    padding: 58px 0 0 62px;
     gap: 20px;
     color: var(--light);
 }
@@ -87,44 +108,48 @@ body{
 }
 /* History - section */
 .history{
+    height: 70vh;
     padding: 62px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     background-color: var(--light);
 }
 .resume{
-    width: 45%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     padding-left: 6px;
 }
 .resume h2{
-    font-size: 2.5rem;
+    font-size: 2.55rem;
     font-weight: 500;
+    line-height: 40px;
+
 }
 .resume p{
+    width: 92%;
     font-size: 1.5rem;
     font-weight: 300;
-    line-height: 30px;
 }
 figure{
-    padding: 20px;
-    width: 45%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 figure img{
-    width: 100%;
-    min-width: 500px;
+    width: 34,35rem;
 }
+figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
 /* Contact - section */
 .contact{
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,20 +187,23 @@ figure img{
     height:100%;
     gap: 62px;
 }
+.form-sheets label{
+    width: 488px;
+    height: 72px;
+
+}
 .form-sheets input{
     width: 100%;
-    max-width: 508px;
-    height: 72px;
+    height: 100%;
     border-radius: 8px;
     border: none;
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     outline: none;
 }
 .form-sheets input:focus{
     outline: solid 5px var(--yellow-scale);
 }
-
 .form-sheets input[type="text"]{
     text-transform: capitalize;
 }
